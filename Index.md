@@ -11,14 +11,46 @@
             tp_defaults.php
             TP_Admin:
                 adminIndex.php
+                adm_assets:
+                    graphics:
+                    scripts:
+                        modules:
+                        index.js
+                    styles:
+                        modules:
+                        index.css
             TP_Content:
                 Themes:
                     themeIndex.php
                      custom_theme:
-                         custom_index.php
+                        custom_index.php
+                        custom_assets;
+                            graphics:
+                            scripts:
+                                modules:
+                                index.js
+                            styles:
+                                modules:
+                                index.css
                      default_theme:
-                         default_index.php
-    
+                        default_index.php
+                        default_assets:
+                            graphics:
+                            scripts:
+                                modules:
+                                index.js
+                            styles:
+                                modules:
+                                index.css
             TP_Core:
             TP_Setup:
                 setupIndex.php
+                setup_assets:
+                    graphics:
+                    scripts:
+                        modules:
+                        index.js
+                    styles:
+                        modules:
+                        index.css
+                
