@@ -5,7 +5,7 @@
  * Date: 24-3-2023
  * Time: 22:46
  */
-namespace TP_Setup;
+namespace TP_Core\Modules\Setup;
 if(ABSPATH) {
     class setupIndex{
         public function __construct() {

@@ -5,13 +5,11 @@
  * Date: 24-3-2023
  * Time: 22:46
  */
-namespace TP_Admin;
-use tp_auto_loaders;
+namespace TP_Core\Modules\Contact;
 if(ABSPATH) {
-    class adminIndex extends \tp_configs {
+    class contactIndex{
         public function __construct() {
-            parent::__construct();
-            echo 'adminIndex with auto loader.';
+            echo 'contactIndex with auto loader.';
         }
     }
 }else {die;}

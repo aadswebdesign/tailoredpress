@@ -15,8 +15,8 @@ if(ABSPATH) {
             if(true === $this->TP_ALL_STEPS_DONE){
                 $this->TP_HAS_BEEN_SETUP = true;
             }
-            //define('THEME_INDEX', 'custom_index');
-            //define('THEME_PATH', 'TP_Content\\Themes\\custom_theme\\');
+            define('THEME_INDEX', 'custom_index');
+            define('THEME_PATH', 'TP_Content\\Themes\\custom_theme\\');
             //defined('') ? null : define('', '');
             //defined('') ? null : define('', '');
             //defined('') ? null : define('', '');

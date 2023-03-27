@@ -7,8 +7,6 @@
  */
 if(ABSPATH) {
     class tp_defaults{
-        protected $TP_HAS_BEEN_SETUP = false;
-        protected $TP_ALL_STEPS_DONE = false;
         public function __construct(){
             $this->__defines();
         }

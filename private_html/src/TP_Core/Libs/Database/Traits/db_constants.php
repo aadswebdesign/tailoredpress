@@ -8,7 +8,8 @@
 namespace TP_Core\Libs\Database\Traits;
 if(ABSPATH) {
     trait db_constants{
-        private function pvt_constants(){
+        private function pvt_db_constants(){
+            ini_set('date.timezone', 'Europe/Amsterdam');
             #COUNT
             defined('DB_COUNT') ? null : define('DB_COUNT', 'COUNT');
             #DELETE
