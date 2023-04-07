@@ -10,15 +10,15 @@ use \tp_auto_loaders;
 if(ABSPATH) {
     class themeIndex extends \tp_configs{
         public function __construct() {
-			parent::__construct();
-			$path = DEFAULT_THEME_PATH;
-			$class_name = DEFAULT_THEME_INDEX;
-			if (defined('THEME_PATH') && defined('THEME_INDEX')){
-				$path = THEME_PATH;
-				$class_name = THEME_INDEX;
-			}
-			$tp = new tp_auto_loaders();
-			$tp->load_class($class_name,$path);
+            parent::__construct();
+            $path = NS_DEFAULT_THEME_PATH;
+            $class_name = 'default_index';
+            if (defined('NS_CUSTOM_THEME_PATH') && defined('NS_CUSTOM_THEME_INDEX')){
+                $path = NS_CUSTOM_THEME_PATH;
+                $class_name = NS_CUSTOM_THEME_INDEX;
+            }
+            $tp = new tp_auto_loaders();
+            echo $tp->load_class($class_name,$path);
         }
     }
 }else {die;}

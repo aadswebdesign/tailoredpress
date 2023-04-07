@@ -15,5 +15,5 @@ require_once(ABSPATH.$src2);
 if(ABSPATH){
     new tp_autoload();
     $tp = new tp_auto_loaders();
-    $tp->load_class('adminIndex','TP_Admin\\');
+    echo $tp->load_class('adminIndex','TP_Admin\\');
 }else{die();}
