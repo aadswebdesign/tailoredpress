@@ -1,1 +1,0 @@
-/** default_assets/scripts/index.js */

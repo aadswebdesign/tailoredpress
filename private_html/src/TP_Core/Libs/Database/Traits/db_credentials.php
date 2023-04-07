@@ -10,7 +10,6 @@ namespace TP_Core\Libs\Database\Traits;
 if(ABSPATH) {
     trait db_credentials{
         private function pvt_credentials(){
-            ini_set('date.timezone', 'Europe/Amsterdam');
             # DIRECTORY SEPARATOR
             defined('DS') ? null : define('DS','/');
             # DIRECTORY PATH
