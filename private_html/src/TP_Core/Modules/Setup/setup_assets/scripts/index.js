@@ -1,0 +1,1 @@
+/** setup_assets/scripts/index.js */
