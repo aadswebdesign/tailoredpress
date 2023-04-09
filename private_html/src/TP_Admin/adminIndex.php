@@ -17,7 +17,7 @@ if(ABSPATH) {
     class adminIndex extends admins {
         private $__footer_args; //content for between the footer tags
         private $__head_args; //content for between the head tags
-        private $__logs; //logs
+        private $__ftr_scripts; //logs
         public function __construct() {
             parent::__construct();
             $ch = new CoreHelpers();
@@ -35,7 +35,7 @@ if(ABSPATH) {
             $ch->setConsoleHelper('adm_test_id1','test_content1');
             $ch->setConsoleHelper('adm_test_id2','test_content2');
             $ch->setConsoleHelper('adm_test_id3','test_content3');
-            $this->__logs = $ch->getConsoleHelpers();
+            $this->__ftr_scripts = $ch->getConsoleHelpers();
         }
         private function __to_string(){
             $html = "<!DOCTYPE html><html>";
@@ -44,7 +44,7 @@ if(ABSPATH) {
             $html .= new header_cpn();
             $html .= new sidebar_cpn();
             $html .= new overlay_cpn();
-            $html .= new FooterComponent($this->__footer_args,$this->__logs);
+            $html .= new FooterComponent($this->__footer_args,$this->__ftr_scripts);
             $html .= "</body>";
             $html .= "</html>";
 

@@ -9,10 +9,10 @@ namespace TP_Core\Libs\Components;
 if(ABSPATH) {
     class FooterComponent{
 		private $__ft_args;
-        private $__logs;
-        public function __construct($args= null, $logs = null){
+        private $__ftr_scripts;
+        public function __construct($args= null, $scripts = null){
             $this->__ft_args = $args;
-            $this->__logs = $logs;
+            $this->__ftr_scripts = $scripts;
         }
         private function __to_string(){
             $footer = "<section class='footer display-flex relative'>";
@@ -21,7 +21,7 @@ if(ABSPATH) {
             $footer .= $this->__ft_args;
             $footer .= "</footer>";
             $footer .= "</section>";
-            $footer .= $this->__logs;
+            $footer .= $this->__ftr_scripts;
             $footer .= "";
             return $footer;
         }
