@@ -180,8 +180,7 @@ if(ABSPATH) {
                 foreach ($meta_ids as $id){
                     if(null !== $name){
                         $meta_block .= "<meta id='$id' name='$name' content='$content' $meta_atts>";
-                    }
-                    if(null !== $http_equiv){
+                    }else if(null !== $http_equiv){
                         $meta_block .= "<meta id='$id' http-equiv='" . $http_equiv . "' content='$content' $meta_atts>";
                     }
                 }

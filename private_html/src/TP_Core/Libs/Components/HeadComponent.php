@@ -14,7 +14,7 @@ if(ABSPATH) {
         }
         private function __to_string(){
             $head  = "<head>";
-            $head .= implode(' ',$this->__hd_args);
+            $head .= $this->__hd_args;
             $head .= "</head>";
             return $head;
         }

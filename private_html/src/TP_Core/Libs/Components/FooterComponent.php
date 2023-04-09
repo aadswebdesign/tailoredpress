@@ -9,18 +9,21 @@ namespace TP_Core\Libs\Components;
 if(ABSPATH) {
     class FooterComponent{
 		private $__ft_args;
-        public function __construct($args= null){
+        private $__logs;
+        public function __construct($args= null, $logs = null){
             $this->__ft_args = $args;
+            $this->__logs = $logs;
         }
         private function __to_string(){
-            $html = "<section class='footer display-flex relative'>";//or static
-            $html .= "<footer class='relative'>";
-            $html .= "footer element";
-            $html .= "</footer>";
-            $html .= "</section>";
-            $html .= implode(' ',$this->__ft_args);
-            $html .= "";
-            return $html;
+            $footer = "<section class='footer display-flex relative'>";
+            $footer .= "<footer class='relative'>";
+            $footer .= "footer element";
+            $footer .= $this->__ft_args;
+            $footer .= "</footer>";
+            $footer .= "</section>";
+            $footer .= $this->__logs;
+            $footer .= "";
+            return $footer;
         }
         public function __toString(){
             return $this->__to_string();

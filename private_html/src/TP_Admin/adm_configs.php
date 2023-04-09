@@ -9,7 +9,7 @@ namespace TP_Admin;
 if(ABSPATH) {
     class adm_configs{
         public function __construct(){
-            define('TP_Admin',ABSPATH . 'TP_Admin/');
+            define('TP_Admin', '../src/TP_Admin/');
             define('ADM_ASSETS', TP_Admin . 'assets/');
             define('ADM_GRAPHICS', ADM_ASSETS . 'graphics/');
             define('ADM_SCRIPTS', ADM_ASSETS . 'scripts/');

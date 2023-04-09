@@ -6,12 +6,10 @@
  * Time: 22:04
  */
 namespace TP_Content\Themes\custom_theme\components;
-use TP_Core\Libs\Components\SidebarComponent;
 if(ABSPATH) {
-    class sidebar_cpn extends SidebarComponent{
+    class sidebar_cpn{
 		private $__sb_args;
         public function __construct($args= null){
-            parent::__construct();
             $this->__sb_args = $args;
         }
         private function __to_string(){

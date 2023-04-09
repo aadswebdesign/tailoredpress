@@ -11,7 +11,7 @@ if(ABSPATH) {
             $this->__defines();
         }
         private function __defines(){
-            define('TP_CONTENT', ABSPATH . 'TP_Content/');
+            define('TP_CONTENT', 'src/TP_Content/');
             define('TP_THEMES', TP_CONTENT .'Themes/');
             define('DEFAULT_THEME', TP_THEMES . 'default_theme/');
             define('DEFAULT_ASSETS', DEFAULT_THEME . 'assets/');
